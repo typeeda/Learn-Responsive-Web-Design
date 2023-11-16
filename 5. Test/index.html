@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for your time to fill this form</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" name="user-name" type="text" placeholder="Jhon" required /></label>
+        <label id="email-label" for="email">Email: <input id="email" name="user-email" type="email" placeholder="jhon@email.com" required /></label>
+        <label id="number-label" for="number">Age: <input id="number" name="user-age" type="number" min="7" max="30" placeholder="21" required /></label>
+        <label for="dropdown">How is your status?
+          <select id="dropdown" name="mariage">
+            <option value="">(select one)</option>
+            <option value="1">Single</option>
+            <option value="2">Married</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Have you ever heard about AI?</p>
+        <label for="ai-yes"><input id="ai-yes" type="radio" name="ai-answer" class="inline" /> Yes</label>
+        <label for="ai-no"><input id="ai-no" type="radio" name="ai-answer" class="inline" /> No</label>
+        <label for="ai-notsure"><input id="ai-notsure" type="radio" name="ai-answer" class="inline" /> Not sure</label>
+        <p>In your opinion, what AI can do?</p>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
