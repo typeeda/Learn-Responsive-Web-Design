@@ -1,0 +1,240 @@
+:root {
+    --kuning: rgb(206, 206, 39);
+    --kuning-hover: rgb(231, 231, 28);
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html{
+    width: 100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: linen;
+    width: 100%;
+}
+
+.container {
+    width: 60%;
+}
+
+section, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0;
+}
+
+/* Header Navigation */
+#header{
+    width: 100%;
+    height: 50px;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+#header .container{
+    width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    height: 30px;
+}
+
+#nav-bar{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Section Form Input */
+
+#form-submit .container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+h1{
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type="email"] {
+    /* Aturan CSS khusus untuk input dengan tipe "text" */
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+  }
+
+.btn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 24px;
+    border: 0;
+    background-color: rgb(206, 206, 39);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: rgb(231, 231, 28);
+}
+
+/* section fitur */
+
+#feature-list .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.icon-lists {
+    display: flex;
+    flex-direction: row;
+    /* gap: 10%; */
+    align-items: center;
+}
+
+.icon {
+    width: 20%;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa {
+    font-size: 50px;
+    text-align: center;
+    color: var(--kuning);
+}
+
+.text-icon {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+iframe {
+    border-radius: 16px;
+}
+
+/* Pricelist */
+
+#pricing .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 32%;
+    background-color: #ffffff;
+    padding: 24px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 8px;
+    gap: 24px;
+}
+
+.price-list h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    margin: 8px 0;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(236, 207, 207);
+    padding: 0;
+    height: 40px;
+}
+ footer .container {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .small-link {
+    display: flex;
+    gap: 10px;
+ }
+
+ .small-link a{
+    text-decoration: none;
+    color: black;
+ }
+
+ @media (min-width: 768px) and (max-width: 1023px) {
+    /* Aturan CSS untuk layar tablet */
+    .container {
+        width: 90%;
+    }
+    header .container {
+        width: 90%;
+    }
+    footer .container {
+        width: 90%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    /* Aturan CSS untuk layar ponsel */
+    /* Misalnya: */
+    .container {
+        width: 95%;
+    }
+    header .container {
+        width: 90%;
+    }
+    footer .container {
+        width: 90%;
+    }
+  }
